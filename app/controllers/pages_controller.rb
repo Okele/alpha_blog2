@@ -1,4 +1,4 @@
-class AlphaBlogController < ApplicationController
+class PagesController < ApplicationController
   
   def home
   
