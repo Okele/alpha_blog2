@@ -1,0 +1,44 @@
+<html>
+  <head><title>My first rails project</title>
+  <style>
+    .main-container{
+      background-color:#ccc;
+      width:100%;
+      height:100%;
+      margin:0 auto;
+    }
+    .container {
+      
+      text-align:center;
+      float:left;
+      background-color:#fff;
+      height:100%;
+    }
+    #top {
+      width:100%;
+      height:25%;
+    }
+    #left {
+      width:25%;
+      height:75%;
+    }
+    #center {
+     width:50%;
+     height:75%;
+    }
+    #right {
+      width:25%;
+      height:75%;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container" id="top">Top</div>
+      <div class="container" id="left"><%= link_to 'Home', alpha_blog_home_path %></div>
+      <div class="container" id="center"><%= link_to 'About', alpha_blog_about_path %></div>
+      <div class="container" id="right">Right</div>
+    </div>
+    
+  </body>
+</html>
